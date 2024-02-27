@@ -1,0 +1,29 @@
+﻿<Window x:Class="QLBanHang_Demo.Add"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QLBanHang_Demo"
+        mc:Ignorable="d"
+        Title="Add" Height="450" Width="800">
+    <Grid>
+            <Label  Content="Mã sản phẩm" HorizontalAlignment="Left" Margin="45,18,0,0" VerticalAlignment="Top" FontSize="16"/>
+            <Label  Content="Tên sản phẩm" HorizontalAlignment="Left" Margin="46,60,0,0" VerticalAlignment="Top" FontSize="16"/>
+            <Label  Content="Loại sản phẩm" HorizontalAlignment="Left" Margin="45,101,0,0" VerticalAlignment="Top" FontSize="16"/>
+            <Label Content="Đơn giá" HorizontalAlignment="Left" Margin="45,146,0,0" VerticalAlignment="Top" FontSize="16"/>
+            <Label  Content="Số lượng có" HorizontalAlignment="Left" Margin="45,190,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.669" FontSize="16"/>
+            <TextBox Name="txtMaSp" HorizontalAlignment="Left" Margin="218,22,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="16" />
+            <TextBox Name="txtTenSp" HorizontalAlignment="Left" Margin="218,64,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176" FontSize="16" />
+            <TextBox Name="txtDonGia" HorizontalAlignment="Left" Margin="218,150,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="16" />
+            <TextBox Name="txtSoLuongCo"  HorizontalAlignment="Left" Margin="218,194,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="16" />
+            <ComboBox Name="txtLoaiSanPham" HorizontalAlignment="Left" Margin="218,106,0,0" VerticalAlignment="Top" Width="120" Height="26">
+                <ComboBoxItem Tag="L01" IsSelected="True">Điện dân dụng</ComboBoxItem>
+                <ComboBoxItem Tag="L02">Điện lạnh</ComboBoxItem>
+                <ComboBoxItem Tag="L03">Điện tử</ComboBoxItem>
+                <ComboBoxItem Tag="L04">Máy tính</ComboBoxItem>
+            </ComboBox>
+            <Button Name="btnAdd" Content="Thêm" Width="70" Height="40" Margin="45,236,685,158" Click="btnOK_Click"/>
+
+    </Grid>
+        
+</Window>
